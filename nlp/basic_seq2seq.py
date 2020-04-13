@@ -22,10 +22,10 @@ decoding_embedding_size = 15
 # Learning Rate
 learning_rate = 0.001
 
-source = open("data/source.txt",'w')
-target = open("data/target.txt",'w')
+source = open("data/source.txt",'w',encoding='utf-8')
+target = open("data/target.txt",'w',encoding='utf-8')
 
-with open("data/对联.txt",'r') as f:
+with open("data/对联.txt",'r',encoding='utf-8') as f:
     lines = f.readlines()
     for line in lines:
         line = line.strip().split(" ")

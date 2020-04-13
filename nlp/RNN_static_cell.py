@@ -102,8 +102,6 @@ def train_network(num_epochs,num_steps,state_size=4,verbose=True):
                         print("Average loss at step",step,"for last 100 steps:",training_loss/100)
                     training_losses.append(training_loss/100)
                 training_loss = 0
-
-
         return training_losses
 
 training_losses = train_network(5,num_steps)
